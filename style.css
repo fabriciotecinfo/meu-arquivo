@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/o que fica visivel para o visitante/
+body {
+    width: 100%;
+    height: 100vh;
+    background: url();
+    background-size: cover;
+    background-position: center;
+}
+/define o conteúdo principal dentro do body em seu documento ou aplicação./
+main {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* é um elemento que irá englobar toda sua página, será o primeiro elemento e dentro dele virão as informações. */
+.container {
+    display: flex;
+    flex-direction: column;
+    background: rgba(rgb(73, 37, 114), rgb(68, 19, 107), rgb(55, 55, 204), alpha);
+    backdrop-filter: blur(30px);
+    border: 2px solid#66118030;
+    width: 400px;
+    height: 550px;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    box-shadow: 0 0 10px black;
+}
+/contém textos representando informações de orientação, relacionados ao elemento a que pertence./
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    font: bold 1.5rem arial;
+
+    margin-bottom: 20px;
+}
+/é usado para criar controles interativos para formulários baseados na web para receber dados do usuário./
+.input {
+    display: flex;
+    width: 300px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input input {
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    outline: 2px;
+    font: bold 1.5rem arial;
+    text-align: center;
+    background-color: transparent;
+}
+/Ela especifica qual o "rótulo" do input (a que se refere o input)/
+.input label {
+    font: bold 1.5rem arial;
+}
+/é utilizado para indicar ao navegador o texto que deverá aparecer escrito no campo do formulário/
+input::placeholder {
+    color: rgb(92, 11, 124);
+    font-style: italic;
+    font-size: 18px;
+}
+/representa um botão clicável/
+button {
+    width: 300px;
+    height: 40px;
+    font: bold 1.2rem arial;
+    background: rgb(130, 8, 155);
+    color: rgb(193, 82, 236);
+    outline: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 55px;
+    font: italic 1.0rem arial;
+}
+/representa um botão clicável./
+button {
+    font: bold 1.2rem arial;
+    background: rgb(96, 19, 126);
+    color: rgb(255, 255, 255);
+    outline: none;
+    border-radius: 55px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.result {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    width: 300px;
+    height: 150px;
+    border-radius: 55px;
+    font: italic 1.0rem arial;
+    box-shadow: 0px 0px 10px rgb(rgb(126, 40, 184), rgb(102, 19, 128), rgb(0, 123, 255));
+    background-color: rgba(rgb(149, 13, 161), rgb(146, 13, 163), rgb(167, 19, 187), 0,08);
+    color: blueviolet;
+    padding: 10px;
+    box-sizing: border-box;
+    user-select: none;
+}
