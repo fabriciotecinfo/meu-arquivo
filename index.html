@@ -1,34 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CALCULADORA IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Corrigida a sintaxe -->
+    <title>JOGO DA VELHA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <main>
-        <div class="container">
-            <h5>Fabricio 2ºinfo2 2024</h5>
-            <div class="title"> CALCULADORA - IMC </div>
-
-            <div class="input">
-                <label>Nome:</label>
-                <input type="text" id='nome'placeholder="Digite seu Nome">
-            </div>
-            <div class="input">
-                <label>Altura :</label>
-                <input type="number" id='altura' placeholder="Sua altura Ex 1,95">
-            </div>
-            <div class="input">
-                <label>Peso :</label>
-                <input tupe="number" id='peso' placeholder="Digite seu Peso">
-            </div>
-            <button id="calcular">CALCULAR</button>
-            <div class="result" id='resultado'></div>
+    <div class="game-container">
+        <h1></h1>
+        <h1></h1>
+        <div id="game-board" class="board">
+            <div class="cell" data-index="0"></div> <!-- Corrigido o atributo data-index -->
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
         </div>
-    </main>
-    <script src="./imc.js"></script>
+        <button id="reset-button">Reiniciar</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
